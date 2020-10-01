@@ -1,4 +1,4 @@
-# leaflet-clonelayer
+# Leaflet Clone Layer
 
 Leaflet layer instances cannot be added to different maps in one javascript runtime.
 `leaflet-clonelayer` clones layers to allow reuse.
@@ -7,11 +7,17 @@ Leaflet layer instances cannot be added to different maps in one javascript runt
  - Also clones a layer's `options` (including renderers)
  - Used in [jieter/Leaflet.layerscontrol-minimap](https://github.com/jieter/Leaflet.layerscontrol-minimap)
 
+Fork of [jieter/leaflet-clonelayer](https://github.com/jieter/leaflet-clonelayer) by Jan Pieter Waagmeester <jieter@jieter.nl>.
+
+## Installatiom
+```bash
+npm install @davidsouthgate/leaflet-clonelayer
+```
 
 ## Example
 
 ```JavaScript
-var cloneLayer = require('leaflet-clonelayer');
+var cloneLayer = require('@davidsouthgate/leaflet-clonelayer');
 
 var layer = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
@@ -26,6 +32,9 @@ cloned.addTo(map2);
 ```
 
 ## Changelog
+
+### 1.0.8 (2020-09-30)
+ - Added support for cloning popups included in a layer
 
 ### 1.0.5 (2018-02-22)
  - Added support for `L.TileLayer.WMS` [#5](https://github.com/jieter/leaflet-clonelayer/pull/5) by [@mhasbie](https://github.com/mhasbie)

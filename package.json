@@ -1,38 +1,25 @@
 {
-  "name": "leaflet-clonelayer",
-  "version": "1.0.7",
-  "description": "Clone leaflet layers",
+  "name": "@davidsouthgate/leaflet-clonelayer",
+  "version": "1.0.8",
+  "description": "Clone leaflet layers. Fork of repo https://github.com/jieter/leaflet-clonelayer by Jan Pieter Waagmeester <jieter@jieter.nl>.",
   "main": "index.js",
-  "scripts": {
-    "lint": "eslint index.js test/spec.js test/index.html",
-    "test": "npm run lint && npm run test-node && npm run test-browser",
-    "test-browser": "mocha-chrome test/index.html",
-    "test-node": "mocha test/spec.js",
-    "release": "mversion patch -m"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/jieter/leaflet-clonelayer.git"
+    "url": "https://github.com/DavidSouthgate/leaflet-clonelayer.git"
   },
   "keywords": [
     "leaflet",
     "clone",
     "layer"
   ],
-  "author": "Jan Pieter Waagmeester <jieter@jieter.nl>",
+  "author": "David Southgate <d@davidsouthgate.co.uk>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jieter/leaflet-clonelayer/issues"
+    "url": "https://github.com/DavidSouthgate/leaflet-clonelayer/issues"
   },
-  "homepage": "https://github.com/jieter/leaflet-clonelayer",
-  "devDependencies": {
-    "chai": "^3.5.0",
-    "chai-leaflet": "0.0.12",
-    "eslint": "^2.7.0",
-    "eslint-plugin-html": "^1.4.0",
-    "leaflet-headless": "^0.2.6",
-    "mocha": "^3.2.0",
-    "mocha-chrome": "^1.1.0",
-    "mversion": "^1.10.1"
+  "homepage": "https://github.com/DavidSouthgate/leaflet-clonelayer",
+  "peerDependencies": {
+    "leaflet": "^1.7.1"
   }
 }
